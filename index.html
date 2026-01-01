@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year Divya 🎉❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Gradient + Fireworks Canvas -->
+<div class="bg"></div>
+<canvas id="fireworks"></canvas>
+
+<!-- Main Container -->
+<div class="container">
+
+  <!-- Header Section -->
+  <section id="intro">
+    <h1>🎆 Happy New Year 2026 🎆</h1>
+    <h2>Divya ❤️</h2>
+    <p>Get ready for the ultimate fun & love ride!</p>
+    <button class="btn" onclick="revealSection('loveSection')">Start 🎉</button>
+  </section>
+
+  <!-- Romantic + Fun Quotes Section -->
+  <section id="loveSection" class="hidden">
+    <h2>💖 For My Wife Divya 💖</h2>
+
+    <div class="quote">Tum meri life ka WiFi ho — bina tumhare signal nahi aata! 😘</div>
+    <div class="quote">Har saal tumhare saath hi New Year celebrate karna hai 💫</div>
+    <div class="quote">Tum meri duniya ho, aur main sirf tumhara follower hoon ❤️</div>
+    <div class="quote">2026 ke resolutions: Divya ko hamesha happy rakhna! 🎯</div>
+    <div class="quote">Tumhare smile pe mera heart crash ho jata hai 😍</div>
+
+    <button class="btn" onclick="revealSection('funSection')">Next Fun Surprise 🎁</button>
+  </section>
+
+  <!-- Fun Section with Interactive Click -->
+  <section id="funSection" class="hidden">
+    <h2>🎉 Fun Time Divya! 🎉</h2>
+    <p>Click the heart to unlock your surprise!</p>
+    <div id="heart" onclick="heartClicked()">❤️</div>
+    <div id="surprise" class="hidden">
+      <h3>Surprise! 🥳</h3>
+      <p>Divya, tum meri life ka sabse funny & beautiful moment ho! 💕</p>
+      <button class="btn" onclick="revealSection('finalSection')">Next 🎆</button>
+    </div>
+  </section>
+
+  <!-- Final Romantic Section -->
+  <section id="finalSection" class="hidden">
+    <h2>💌 My Forever Divya 💌</h2>
+    <p>2026 ho ya zindagi ka har saal, main tumhare saath rehna chahta hoon — hamesha ❤️</p>
+    <p>Har pal, har saans, sirf tumhare liye 🌹</p>
+    <button class="btn" onclick="showConfetti()">Celebrate 🎇</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
